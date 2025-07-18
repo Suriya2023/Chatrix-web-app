@@ -5,7 +5,7 @@ import { applyCustomTheme } from '../consonent/themeUtil';
 
 export const useTHEME_COLORStore = create((set) => {
   const saved = localStorage.getItem('chat-theme') || 'light';
-  applyCustomTheme(saved); // Apply on load
+  applyCustomTheme(saved);  
 
   return {
     theme: saved,
